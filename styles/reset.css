@@ -1,0 +1,29 @@
+:root {
+    --blue: #041949;
+    --dark-gold: #b6935e;
+    --light-gold: #c8a673;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body, header, nav, ul, li, i, figure, img, div, p, span, h1 ,h2, h3, button,
+a, article, section, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
