@@ -59,7 +59,7 @@
 }
 
 /* ================ PAGE 1 MOBILE ================= */
-.content-element, .contact-link-container {
+.contact-link-container {
     padding: 0 10px;
 }
 
@@ -80,17 +80,17 @@
 }
 
 .page-title {
-    padding: 10px;
+    padding: 0 10px;
     font-size: 35px;
     color: var(--blue);
     text-align: center;
-    /* background-color: var(--dark-gold); */
 }
 
 .page-caption {
     color: var(--light-gold);
     font-size: 28px;
     margin: 20px 0;
+    padding: 0 10px;
 }
 
 
@@ -189,11 +189,8 @@
 
 /* ==================== PAGE 1 DESKTOP ============== */
 @media only screen and (min-width: 550px) {
-    
-
-
     .page-title {
-        padding: 0;
+        padding: 0 10px;
         font-size: 45px;
         text-align: left;
         background-color: transparent;
@@ -204,6 +201,7 @@
     }
 
     .contact-link-container {
+        margin-left: 10px;
         padding: 10px;
         width: fit-content;
     }
