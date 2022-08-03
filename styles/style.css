@@ -104,6 +104,71 @@
     color: #FFF;
 }
 
+/* ============= PAGE 2 MOBILE ================= */
+.about-us {
+    padding: 40px 10px 10px;
+    position:relative;
+    color: #FFF;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.about-us::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.content-limiter {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.about-us-title {
+    color: var(--dark-gold);
+    font-size: 30px;
+    text-decoration: underline 3px var(--dark-gold);
+    margin-bottom: 20px;
+}
+
+.about-us-content {
+    font-size: 18px;
+}
+
+.fundamentals-container {
+    margin: 30px 0;
+}
+
+.fundamentals-item {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.fundamentals-figure {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fundamentals-image {
+    width: 200px;
+}
+
+.fundamentals-name {
+    font-weight: bold;
+    color: var(--dark-gold);
+    font-size: 24px;
+    text-decoration: underline 2px;
+}
+
+.fundamentals-description {
+    text-align: center;
+}
 
 /* ================ HEADER DESKTOP =================  */
 @media only screen and (min-width: 950px) {
@@ -151,5 +216,31 @@
 
     .intro-content-container {
         margin-top: 115px;
+    }
+}
+
+/* ============= PAGE 2 DESKTOP ================== */
+@media only screen and (min-width: 750px) {
+    .about-us {
+        background-image: url('../assets/img/background-second.png');
+        background-size: cover;
+    }
+    
+    .fundamentals-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .about-us-title {
+        font-size: 40px;
+    }
+
+    .about-us-content, .fundamentals-description {
+        font-size: 22px;
+    }
+
+    .fundamentals-name {
+        font-size: 26px;
     }
 }
