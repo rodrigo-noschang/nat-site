@@ -170,6 +170,66 @@
     text-align: center;
 }
 
+/* ================== PAGE 3 MOBILE ================= */
+.areas {
+    padding: 30px 10px;
+    font-size: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: var(--cream);
+}
+
+.areas-title {
+    color: var(--dark-gold);
+}
+
+.areas-contact-wpp-container {
+    margin: 10px 0;
+    background-color: var(--dark-gold);
+    padding: 10px 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+.area-contact-wpp {
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.areas-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.area-item {
+    margin: 20px 0;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.area-name {
+    font-size: 20px;
+    background-image: url('../assets/img/background-field-small.png');
+    padding: 30px 10px;
+    color: #FFF;
+    background-size: cover;
+    text-align: center;
+    height: 107px;
+}
+
+.area-description {
+    background-color: var(--dark-gold);
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: justify;
+    line-height: 22px;
+}
+
 /* ================ HEADER DESKTOP =================  */
 @media only screen and (min-width: 950px) {
     .header-container {
@@ -240,5 +300,41 @@
 
     .fundamentals-name {
         font-size: 26px;
+    }
+}
+
+/* =============== PAGE 3 DESKTOP ================ */
+@media only screen and (min-width: 535px) {
+    .area-item {
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 645px) {
+    .areas-header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .areas-title {
+        font-size: 34px;
+    }
+
+    .area-contact-wpp {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .areas {
+        background-color: none;
+        background-image: url('../assets/img/background-third.png');
+        background-size: cover;
+    }
+
+    .area-contact-wpp {
+        font-size: 22px;
     }
 }
