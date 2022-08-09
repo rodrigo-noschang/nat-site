@@ -64,15 +64,12 @@
 }
 
 .intro-container {
-    margin-top: 30px;
     max-width: 1500px;
     margin: 30px auto 0;
-    background-image: url('../assets/img/background-first.png');
-    background-position: center;
-    background-size: cover;
-    height: 500px;
+    background-color: var(--cream);
     display: flex;
     align-items: center;
+    padding: 30px 0;
 }
 
 .intro-content-container {
@@ -230,6 +227,177 @@
     line-height: 22px;
 }
 
+/* ================= PAGE 4 MOBILE =====================*/
+.keep-up {
+    background-color: var(--cream);
+    padding: 30px 10px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.keep-up-content-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.keep-up-title {
+    color: var(--blue);
+    font-size: 45px;
+}
+
+.keep-up-text {
+    color: var(--dark-gold);
+    font-weight: bold;
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.keep-up-contact-wpp {
+    background-color: var(--dark-gold);
+    color: #FFF;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.keep-up-images-container {
+    max-width: 770px;
+    margin-top: 35px;
+}
+
+.keep-up-facebook {
+    width: 90vw;
+    max-width: 270px;
+    background-color: var(--dark-gold);
+    border-radius: 10px;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.keep-up-facebook-title {
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+.keep-up-facebook-image-container {
+    background-color: var(--black-background);
+    color: #FFF;
+    border-radius: 10px;
+    padding: 1px 10px 0;
+    margin-top: 15px;
+}
+
+.keep-up-facebook-top-part {
+    display: flex;
+    margin: 7px 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.keep-up-facebook-left-arrow, .keep-up-facebook-search {
+    font-size: 12px;
+}
+
+.keep-up-facebook-input-container {
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.keep-up-facebook-search-text {
+    font-size: 12px;
+}
+
+.keep-up-facebook-figure, .keep-up-facebook-image {
+    width: 100%;
+}
+
+.keep-up-facebook-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.keep-up-facebook-bottom-figure {
+    background-color: var(--cream);
+    width: 46px;
+    height: 32px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.keep-up-image-bottom-logo {
+    width: 50px;
+    height: 20px;
+} 
+
+.keep-up-facebook-info {
+    margin-left: 15px;
+}
+
+.keep-up-facebook-info-title {
+    font-size: 15px;
+}
+
+.keep-up-facebook-info-text, .keep-up-facebook-info-time {
+    font-size: 12px;
+    color: #9c9c9c;
+    margin: 10px 0;
+}
+
+.keep-up-facebook-status {
+    color: green;
+    font-weight: bold;
+}
+
+.keep-up-facebook-like-container, .keep-up-facebook-like {
+    font-size: 11px;
+    color: var(--like-blue);
+}
+
+.keep-up-facebook-like-container {
+    text-align: center;
+}
+
+.keep-up-instagram {
+    background-color: var(--dark-gold);
+    border-radius: 10px;
+    margin: 30px auto 0px;
+    padding: 15px 10px;
+    width: 100vw;
+    max-width: 300px;
+}
+
+.keep-up-instagram-inner-container {
+    background-color: #FFF;
+    padding: 10px 10px 0;
+    border-radius: 10px;
+}
+
+.keep-up-instagram-follow {
+    color: var(--dark-gold);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.keep-up-instagram-address {
+    color: var(--blue);
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.keep-up-instagram-figure {
+    text-align: center;
+}
+
+.keep-up-instagram-image {
+    width: 255px;
+}
+
 /* ================ HEADER DESKTOP =================  */
 @media only screen and (min-width: 950px) {
     .header-container {
@@ -267,11 +435,17 @@
     }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 750px) {
     .intro-container {
-        height: 700px;
+        background-image: url('../assets/img/background-first.png');
+        background-position: center;
+        background-size: cover;
+        padding: 0 0 60px;
+        margin: 25px auto 0;
     }
+}
 
+@media only screen and (min-width: 950px) {
     .intro-content-container {
         margin-top: 115px;
     }
@@ -336,5 +510,56 @@
 
     .area-contact-wpp {
         font-size: 22px;
+    }
+}
+
+/* ============ PAGE 4 DESKTOP =============== */
+@media only screen and (min-width: 750px) {
+    .keep-up {
+        background-image: url('../assets/img/background-fourth.png');
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    .content-limiter-keep-up {
+        height: 550px;
+        align-items: center;
+    }
+    
+    .content-limiter-keep-up {
+        display: flex;
+    }
+
+    .keep-up-text {
+        margin: 30px 0;
+    }
+
+    .keep-up-facebook {
+        margin: 0;
+    }
+}
+
+
+@media only screen and (min-width: 365px) {
+    .keep-up-facebook-top-part {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .keep-up-contact-wpp {
+        font-size: 22px;
+    }
+    
+    .keep-up-images-container {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 60%;
+        margin: 35px auto 0;
+    }
+
+    .keep-up-instagram {
+        margin: 0;
     }
 }

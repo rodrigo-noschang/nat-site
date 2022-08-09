@@ -3,6 +3,9 @@
     --dark-gold: #b6935e;
     --light-gold: #c8a673;
     --cream: #f8f1e7;
+    --black-background: #212121;
+    --grey-letter: #9c9c9c;
+    --like-blue: #0089ff;
 }
 
 html {
@@ -10,7 +13,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body, header, nav, ul, li, i, figure, img, div, p, span, h1 ,h2, h3, button,
+html, body, header, nav, ul, li, i, figure, img, div, p, span, h1 ,h2, h3, h4, button,
 a, article, section, main {
     margin: 0;
     padding: 0;
