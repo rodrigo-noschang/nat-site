@@ -38,10 +38,13 @@
 }
 
 .header-navigation-item {
-    color: var(--blue);
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+}
+
+.header-navigation-link {
+    color: var(--blue);
 }
 
 .header-navigation-wpp {
@@ -461,8 +464,11 @@
 
 .office-social-media-icon {
     font-size: 45px;
-    margin: 0 20px;
     color: var(--dark-gold);
+}
+
+.social-media-link {
+    margin: 0 20px;
 }
 
 .social-media-facebook-instagram {
