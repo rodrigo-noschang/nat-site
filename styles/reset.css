@@ -14,7 +14,7 @@ html {
 }
 
 html, body, header, nav, ul, li, i, figure, img, div, p, span, h1 ,h2, h3, h4, button,
-a, article, section, main {
+a, article, section, main, footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

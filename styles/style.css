@@ -265,6 +265,7 @@
     margin-top: 35px;
 }
 
+/* Image facebook (smaller) */
 .keep-up-facebook {
     width: 90vw;
     max-width: 270px;
@@ -363,6 +364,7 @@
     text-align: center;
 }
 
+/* Image instagram (larger) */
 .keep-up-instagram {
     background-color: var(--dark-gold);
     border-radius: 10px;
@@ -396,6 +398,77 @@
 
 .keep-up-instagram-image {
     width: 255px;
+}
+
+/* ================ PAGE 5 MOBILE ============== */
+.office-infos {
+    position: relative;
+    padding: 20px 10px;
+    color: #FFF;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.office-infos::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.footer-contact-info, .social-media {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.office-infos-section-title {
+    background-color: var(--dark-gold);
+    padding: 5px 10px;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.office-infos-section-contact {
+    margin: 15px 0;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.office-infos-icon {
+    color: var(--dark-gold);
+    font-size: 25px;
+}
+
+.office-infos-logo-image {
+    width: 27px;
+}
+
+.office-infos-content {
+    margin-left: 10px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.office-social-media-icon {
+    font-size: 45px;
+    margin: 0 20px;
+    color: var(--dark-gold);
+}
+
+.social-media-facebook-instagram {
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0;
 }
 
 /* ================ HEADER DESKTOP =================  */
@@ -540,7 +613,6 @@
     }
 }
 
-
 @media only screen and (min-width: 365px) {
     .keep-up-facebook-top-part {
         justify-content: space-around;
@@ -561,5 +633,55 @@
 
     .keep-up-instagram {
         margin: 0;
+    }
+}
+
+/* ============== PAGE 5 DESKTOP ==============*/
+@media only screen and (min-width: 750px) {
+    .office-infos {
+        background-image: url('../assets/img/background-fifth.png');
+    }
+
+    .office-infos-section-title {
+        font-size: 28px;
+    }
+
+    .office-infos-icon {
+        font-size: 37px;
+    }
+    
+    .office-infos-logo-image {
+        width: 37px;
+    }
+    
+    .office-infos-content {
+        font-size: 20px;
+    }
+
+    .office-social-media-icon {
+        font-size: 55px;
+    }
+
+    .social-media-facebook-instagram {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .office-infos {
+        padding-top: 40px;
+    }
+    
+    .office-infos-content-limiter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-media-image-container {
+        background-image: url('../assets/img/logo-shield.png');
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
     }
 }
