@@ -385,8 +385,12 @@
 }
 
 .keep-up-facebook-status {
-    color: green;
     font-weight: bold;
+    color: #bc3535;
+}
+
+.keep-up-facebook-status-open {
+    color: green;
 }
 
 .keep-up-facebook-like-container, .keep-up-facebook-like {
@@ -519,6 +523,10 @@
         display: flex;
         justify-content: space-between;
         padding: 10px;
+    }
+
+    .header-image-container {
+        margin-left: 60px;
     }
 
     .header-navigation {
