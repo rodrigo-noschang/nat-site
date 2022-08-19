@@ -6,7 +6,6 @@ const isOfficeOpen = () => {
 const updateOfficeStatus = () => {
     const statusElement = document.querySelector('.keep-up-facebook-status')
 
-
     if (isOfficeOpen()) {
         statusElement.innerText = 'Aberto agora';
         statusElement.classList.add('keep-up-facebook-status-open');
