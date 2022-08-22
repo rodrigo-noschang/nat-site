@@ -202,6 +202,10 @@
     background-color: var(--cream);
 }
 
+.content-limiter-areas {
+    max-width: 1310px;
+}
+
 .areas-title {
     color: var(--dark-gold);
 }
@@ -212,6 +216,11 @@
     padding: 10px 5px;
     text-align: center;
     width: fit-content;
+}
+
+.areas-header-container {
+    max-width: 1150px;
+    margin: 0 auto;
 }
 
 .areas-contact-wpp-container:hover {
@@ -232,9 +241,11 @@
 
 .area-item {
     margin: 20px 0;
-    width: 260px;
+    width: 280px;
     display: flex;
     flex-direction: column;
+    height: 107px;
+    overflow: hidden;
 }
 
 .area-name {
@@ -245,16 +256,48 @@
     background-size: cover;
     text-align: center;
     height: 107px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.area-name-title {
+    flex-basis: 80%;
+}
+
+.area-name-arrow {
+    transform: rotate(0);
+    transition: .2s;
 }
 
 .area-description {
     background-color: var(--dark-gold);
     color: #FFF;
-    padding: 10px;
     font-size: 16px;
     flex-grow: 1;
+    padding: 10px;
     text-align: justify;
     line-height: 22px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .3;
+}
+
+.shown-item {
+    height: 100%;
+}
+
+.shown-description {
+    transform: scaleY(1);
+    transition: .3s;
+}
+
+.shown-arrow {
+    transform: rotate(180deg);
+    transition: .3s;
 }
 
 /* ================= PAGE 4 MOBILE =====================*/
@@ -624,6 +667,13 @@
     }
 }
 
+@media only screen and (min-width: 690px) {
+    .area-item {
+        margin: 30px 20px;
+    }
+
+}
+
 @media only screen and (min-width: 750px) {
     .areas {
         background-color: none;
@@ -633,6 +683,12 @@
 
     .area-contact-wpp {
         font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .area-item {
+        margin: 40px 20px;
     }
 }
 
