@@ -96,7 +96,7 @@
 }
 
 .intro-content-container {
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .page-title {
@@ -626,6 +626,10 @@
 @media only screen and (min-width: 950px) {
     .intro-content-container {
         margin-top: 115px;
+    }
+
+    .page-title {
+        font-size: 65px;
     }
 }
 
